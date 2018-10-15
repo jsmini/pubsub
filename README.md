@@ -7,24 +7,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/pubsub.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/pubsub)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/pubsub.svg)](http://isitmaintained.com/project/jsmini/pubsub "Percentage of issues still open")
 
-最好用的js第三方库脚手架，fork或clone本仓库，即可搭建完成一个新库的基础框架
-
-## 特性
-
-- ES6编写源码，编译生成生产代码
-- 集成 babel-runtime (默认关闭)
-- 第三方依赖自动注入（自动剔除第三方依赖无用代码tree shaking）
-- 多环境支持（支持浏览器原生，支持AMD，CMD，支持Webpack，Rollup，fis等，支持Node）
-- 集成单元测试环境
-- 集成代码风格校验eslint
-- 集成可持续构建工具[travis-ci](https://www.travis-ci.org/)
-- 支持自定义banner
-- 集成[jsmini](https://github.com/jsmini)
-- 集成ISSUE_TEMPLATE
-- 支持[sideEffects](https://juejin.im/post/5b4ff9ece51d45190c18bb65)
-- 支持一键重命名
-
-**注意:** 如果不同时使用 export 与 export default 可打开legacy模式，legacy模式下的模块系统可以兼容ie6-8，见rollup配置文件
+小而美的pubsub库，发布订阅者模式
 
 ## 兼容性
 单元测试保证支持如下环境：
