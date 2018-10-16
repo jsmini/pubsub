@@ -42,6 +42,8 @@
     "rollup-plugin-node-resolve": "3.0.3"
   },
   "dependencies": {
+    "@jsmini/event": "0.5.1",
+    "@jsmini/is": "0.7.1",
     "babel-runtime": "6.26.0"
   }
 }
