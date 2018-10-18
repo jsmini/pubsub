@@ -6,9 +6,9 @@ describe('单元测试', function() {
     this.timeout(1000)
 
     describe('触发订阅', () => {
-        base.sub('hello', (...args) => {
+        base.sub('hello', str => {
             it('相等', () => {
-                expect(args[0]).to.equal('test')
+                expect(str).to.equal('test')
             })
         })
         base.pub('hello', 'test')
