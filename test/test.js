@@ -15,8 +15,8 @@ describe('单元测试', function() {
     })
 
     describe('取消/订阅', () => {
-        let flag = { num: 0 }
-        let cb = flag => {
+        var flag = { num: 0 }
+        var cb = flag => {
             flag.num++
         }
 
@@ -34,7 +34,7 @@ describe('单元测试', function() {
     })
 
     describe('构造函数测试', () => {
-        const foo = new base.PubSub()
+        var foo = new base.PubSub()
         it('实例构造检测', () => {
             expect(foo.pub).to.equal(foo.publish)
             expect(foo.unsub).to.equal(foo.unsubscribe)
