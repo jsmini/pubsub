@@ -1,6 +1,6 @@
 {
   "name": "@jsmini/pubsub",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "小而美的pubsub库，发布订阅者模式",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
@@ -42,8 +42,8 @@
     "rollup-plugin-node-resolve": "3.0.3"
   },
   "dependencies": {
-    "@jsmini/event": "0.5.1",
-    "@jsmini/is": "0.7.1",
+    "@jsmini/event": "^0.6.1",
+    "@jsmini/is": "^0.8.1",
     "babel-runtime": "6.26.0"
   }
 }
