@@ -21,7 +21,7 @@ unit test ensure it supports the following environments.
 | ------- | ------ | ------- | ------ | ----- | ---- | ------- | ----- |
 | 6+      | 23+    | 4+      | 6+     | 10+   | 5+   | 2.3+    | 0.10+ |
 
-**Notice:  builds depends on ES5. In order to support IE6-8,  you should import  [es5-shim](http://github.com/es-shims/es5-shim/) . See example in [demo/demo-global.html](../demo/demo-global.html)**
+**Notice:  builds depends on ES5. In order to support IE6-8,  you should import  [es5-shim](http://github.com/es-shims/es5-shim/) . See example in [demo/demo-global.html](./demo/demo-global.html)**
 
 ## Directory
 
