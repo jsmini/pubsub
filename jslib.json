@@ -1,0 +1,9 @@
+{
+    "name": "pubsub",
+    "npmname": "@jsmini/pubsub",
+    "umdname": "jsmini_pubsub",
+    "username": "jsmini",
+    "type": "js",
+    "lang": "zh",
+    "version": "1.3.0"
+}
