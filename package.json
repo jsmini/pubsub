@@ -1,6 +1,6 @@
 {
   "name": "@jsmini/pubsub",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "小而美的pubsub库，发布订阅者模式",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
