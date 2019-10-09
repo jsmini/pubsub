@@ -1,6 +1,6 @@
 {
   "name": "@jsmini/pubsub",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "小而美的pubsub库，发布订阅者模式",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
@@ -42,7 +42,7 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "8.3.0",
     "rollup-plugin-node-resolve": "3.0.3",
-    "@js-lib/cli": "^1.3.0",
+    "@js-lib/cli": "^1.4.2",
     "cross-env": "5.2.0",
     "@babel/cli": "7.1.5",
     "@babel/core": "^7.1.2",
@@ -61,7 +61,8 @@
     "@babel/runtime": "^7.1.2"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "*.d.ts"
   ],
   "engines": {
     "node": ">= 0.12.0"
