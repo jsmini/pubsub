@@ -1,6 +1,6 @@
 {
   "name": "@jsmini/pubsub",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "A small yet beautiful PubSub library, implementing the Publisher-Subscriber pattern.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
