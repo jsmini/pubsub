@@ -1,23 +1,23 @@
-# [pubsub](https://github.com/jsmini/pubsub) 
+# [pubsub](https://github.com/jsmini/pubsub)
 
 [![](https://img.shields.io/badge/Powered%20by-jslib%20pubsub-brightgreen.svg)](https://github.com/yanhaijing/jslib-pubsub)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsmini/pubsub/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/jsmini/pubsub.svg?branch=master)](https://travis-ci.org/jsmini/pubsub)
-[![Coveralls](https://img.shields.io/coveralls/jsmini/pubsub.svg)](https://coveralls.io/github/jsmini/pubsub)
+[![CI](https://github.com/jsmini/pubsub/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/jsmini/pubsub/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/badge/npm-0.2.3-orange.svg)](https://www.npmjs.com/package/@jsmini/pubsub)
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/pubsub.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/pubsub)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/pubsub.svg)](http://isitmaintained.com/project/jsmini/pubsub "Percentage of issues still open")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/pubsub.svg)](http://isitmaintained.com/project/jsmini/pubsub 'Percentage of issues still open')
 
 小而美的pubsub库，发布订阅者模式
 
 [English](./README.md) | 简体中文
 
 ## 兼容性
+
 单元测试保证支持如下环境：
 
-| IE   | CH   | FF   | SF   | OP   | IOS  | 安卓   | Node  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
-| 6+   | 23+  | 4+   | 6+   | 10+  | 5+   | 2.3+ | 0.10+ |
+| IE  | CH  | FF  | SF  | OP  | IOS | 安卓 | Node  |
+| --- | --- | --- | --- | --- | --- | ---- | ----- |
+| 6+  | 23+ | 4+  | 6+  | 10+ | 5+  | 2.3+ | 0.10+ |
 
 **注意：编译代码依赖ES5环境，对于ie6-8需要引入[es5-shim](http://github.com/es-shims/es5-shim/)才可以兼容，可以查看[demo/demo-global.html](./demo/demo-global.html)中的例子**
 
@@ -35,6 +35,7 @@
 ```
 
 ## 如何使用
+
 通过npm下载安装代码
 
 ```bash
@@ -56,9 +57,12 @@ import { name } from '@jsmini/pubsub';
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/@jsmini/pubsub/dist/index.aio.js'], function (jsmini_pubsub) {
+requirejs(
+  ['node_modules/@jsmini/pubsub/dist/index.aio.js'],
+  function (jsmini_pubsub) {
     var name = jsmini_pubsub.name;
-})
+  },
+);
 ```
 
 如果你是浏览器环境
@@ -67,14 +71,16 @@ requirejs(['node_modules/@jsmini/pubsub/dist/index.aio.js'], function (jsmini_pu
 <script src="node_modules/@jsmini/pubsub/dist/index.aio.js"></script>
 
 <script>
-    var name = jsmini_pubsub.name;
+  var name = jsmini_pubsub.name;
 </script>
 ```
 
 ## 文档
+
 [API](https://github.com/jsmini/pubsub/blob/master/doc/api.md)
 
-## 贡献指南  ![PRs welcome](<https://img.shields.io/badge/PRs-welcome-brightgreen.svg>)
+## 贡献指南 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 首次运行需要先安装依赖
 
 ```bash
@@ -117,12 +123,15 @@ $ npm run rename # 重命名命令
 ```
 
 ## 贡献者列表
+
 [contributors](https://github.com/jsmini/pubsub/graphs/contributors)
 
 ## 更新日志
+
 [CHANGELOG.md](https://github.com/jsmini/pubsub/blob/master/CHANGELOG.md)
 
 ## 计划列表
+
 [TODO.md](https://github.com/jsmini/pubsub/blob/master/TODO.md)
 
 ## 谁在使用

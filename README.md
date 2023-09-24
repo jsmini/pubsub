@@ -1,16 +1,13 @@
-# [pubsub](https://github.com/jsmini/pubsub)  
+# [pubsub](https://github.com/jsmini/pubsub)
 
 [![](https://img.shields.io/badge/Powered%20by-jslib%20pubsub-brightgreen.svg)](https://github.com/yanhaijing/jslib-pubsub)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsmini/pubsub/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/jsmini/pubsub.svg?branch=master)](https://travis-ci.org/jsmini/pubsub)
-[![Coveralls](https://img.shields.io/coveralls/jsmini/pubsub.svg)](https://coveralls.io/github/jsmini/pubsub)
+[![CI](https://github.com/jsmini/pubsub/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/jsmini/pubsub/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/badge/npm-0.2.3-orange.svg)](https://www.npmjs.com/package/@jsmini/pubsub)
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/pubsub.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/pubsub)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/pubsub.svg)](http://isitmaintained.com/project/jsmini/pubsub "Percentage of issues still open")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/pubsub.svg)](http://isitmaintained.com/project/jsmini/pubsub 'Percentage of issues still open')
 
-Mini pubsub library.
-
-小而美的pubsub库，发布订阅者模式
+A small yet beautiful PubSub library, implementing the Publisher-Subscriber pattern.
 
 English | [简体中文](./README-zh_CN.md)
 
@@ -18,11 +15,11 @@ English | [简体中文](./README-zh_CN.md)
 
 unit test ensure it supports the following environments.
 
-| IE/Edge | Chrome | Firefox | Safari | Opera | IOS  | Android | Node  |
-| ------- | ------ | ------- | ------ | ----- | ---- | ------- | ----- |
-| 6+      | 23+    | 4+      | 6+     | 10+   | 5+   | 2.3+    | 0.10+ |
+| IE/Edge | Chrome | Firefox | Safari | Opera | IOS | Android | Node  |
+| ------- | ------ | ------- | ------ | ----- | --- | ------- | ----- |
+| 6+      | 23+    | 4+      | 6+     | 10+   | 5+  | 2.3+    | 0.10+ |
 
-**Notice:  builds depends on ES5. In order to support IE6-8,  you should import  [es5-shim](http://github.com/es-shims/es5-shim/) . See example in [demo/demo-global.html](./demo/demo-global.html)**
+**Notice: builds depends on ES5. In order to support IE6-8, you should import [es5-shim](http://github.com/es-shims/es5-shim/) . See example in [demo/demo-global.html](./demo/demo-global.html)**
 
 ## Directory
 
@@ -38,6 +35,7 @@ unit test ensure it supports the following environments.
 ```
 
 ## Usage
+
 npm installation
 
 ```bash
@@ -59,9 +57,12 @@ import { name } from '@jsmini/pubsub';
 Require.js
 
 ```js
-requirejs(['node_modules/@jsmini/pubsub/dist/index.aio.js'], function (jsmini_pubsub) {
+requirejs(
+  ['node_modules/@jsmini/pubsub/dist/index.aio.js'],
+  function (jsmini_pubsub) {
     var name = jsmini_pubsub.name;
-})
+  },
+);
 ```
 
 Browser
@@ -70,7 +71,7 @@ Browser
 <script src="node_modules/@jsmini/pubsub/dist/index.aio.js"></script>
 
 <script>
-    var name = jsmini_pubsub.name;
+  var name = jsmini_pubsub.name;
 </script>
 ```
 
@@ -78,8 +79,9 @@ Browser
 
 [API](https://github.com/jsmini/pubsub/blob/master/doc/api.md)
 
-## Contributing Guide  ![PRs welcome](<https://img.shields.io/badge/PRs-welcome-brightgreen.svg>)
-when initialize, install dependencies 
+## Contributing Guide ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
+when initialize, install dependencies
 
 ```bash
 $ npm install
@@ -91,13 +93,13 @@ builds your code for production to `build` folder
 $ npm run build
 ```
 
-run unit test.  notice: borwser enviroment need to test manually.  test file is in `test/browser`
+run unit test. notice: borwser enviroment need to test manually. test file is in `test/browser`
 
 ```bash
 $ npm test
 ```
 
-change  the  version in package.json and README.md, add your description in CHANGELOG.md, and then release it happily.
+change the version in package.json and README.md, add your description in CHANGELOG.md, and then release it happily.
 
 ```bash
 $ npm run release
@@ -109,7 +111,7 @@ publish the new package to npm
 $ npm publish --access=public
 ```
 
-rename  project. you need to edit project name when initialize project or anytime you want to rename the project . you need to rename `formName` and `toname` in file `rename.js`,which will automatically rename project name in the following files
+rename project. you need to edit project name when initialize project or anytime you want to rename the project . you need to rename `formName` and `toname` in file `rename.js`,which will automatically rename project name in the following files
 
 - README.md
 - package.json
@@ -121,12 +123,15 @@ $ npm run rename # rename command
 ```
 
 ## Contributors
+
 [contributors](https://github.com/jsmini/pubsub/graphs/contributors)
 
 ## CHANGELOG
+
 [CHANGELOG.md](https://github.com/jsmini/pubsub/blob/master/CHANGELOG.md)
 
 ## TODO
+
 [TODO.md](https://github.com/jsmini/pubsub/blob/master/TODO.md)
 
 ## who is using

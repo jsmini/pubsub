@@ -1,7 +1,9 @@
 # 文档
+
 pubsub是一个小而美的发布订阅者模式库。
 
 ## PubSub
+
 调度中心实例构造函数
 
 可以生成调度中心实例，实例上都可以挂载订阅者
@@ -13,7 +15,7 @@ pubsub是一个小而美的发布订阅者模式库。
 举个例子
 
 ```js
-new PubSub() // 调度中心实例
+new PubSub(); // 调度中心实例
 ```
 
 ## subscribe / sub
@@ -32,12 +34,12 @@ new PubSub() // 调度中心实例
 
 ```js
 subscribe('hello', (...args) => {
-	//...
-})
+  //...
+});
 // 下面方式作用相同：
 sub('hello', (...args) => {
-	//...
-})
+  //...
+});
 ```
 
 ## unsubscribe / unsub
@@ -56,13 +58,13 @@ sub('hello', (...args) => {
 
 ```js
 const cb = (...args) => {
-	//...
-}
-subscribe('hello', cb)
+  //...
+};
+subscribe('hello', cb);
 
-unsubscribe('hello', cb) // 注销了cb
+unsubscribe('hello', cb); // 注销了cb
 // 下面方式作用相同：
-unsub('hello', cb)
+unsub('hello', cb);
 ```
 
 ## publish / pub
@@ -74,19 +76,18 @@ unsub('hello', cb)
 函数参数和返回值
 
 - param {string} channel 订阅的消息名
-- param {*}  ...args 传递给每个回调函数的参数
+- param {\*} ...args 传递给每个回调函数的参数
 - return {undefined}
 
 举个例子（要包含代码用例）
 
 ```js
 const cb = (...args) => {
-	//...
-}
-subscribe('hello', cb)
+  //...
+};
+subscribe('hello', cb);
 
-publish('hello', 1, [2], {foo: 3}) // 此处执行 cb(1, [2], {foo: 3})
+publish('hello', 1, [2], { foo: 3 }); // 此处执行 cb(1, [2], {foo: 3})
 // 下面方式作用相同：
-pub('hello', 1, [2], {foo: 3}) // 此处执行 cb(1, [2], {foo: 3})
+pub('hello', 1, [2], { foo: 3 }); // 此处执行 cb(1, [2], {foo: 3})
 ```
-
